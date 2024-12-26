@@ -33,5 +33,7 @@ print(f"Описание заметки: {content}")
 print(f"Статус заметки: {status}")
 print(f"Дата создания заметки в формате \"день-месяц-год\": {created_date.strftime("%d-%m-%Y")}")
 print(f"Дата истечения заметки (дедлайн) в формате \"день-месяц-год\": {issue_date.strftime("%d-%m-%Y")}")
+print("\n")
 
-print(note)
+for key,value in note.items():
+    print(f"{key:15}: {value}")
